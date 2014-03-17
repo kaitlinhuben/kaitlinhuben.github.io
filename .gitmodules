@@ -1,0 +1,7 @@
+[submodule "orion"]
+	path = projects/orion
+	url = git://www.github.com/kaitlinhuben/orion-clearLocalStoragePlugin.git
+
+[submodule "brownian-motion"]
+	path = projects/brownian-motion
+	url = git://www.github.com/kaitlinhuben/brownian-motion.git
