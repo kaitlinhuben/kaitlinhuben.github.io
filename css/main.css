@@ -51,9 +51,9 @@ a img, a, img { border: none; outline: none; text-decoration: none;}
 #toTop {
     display: none;
     position: fixed;
-    /*bottom: 1%;*/
-    top: 1%;
-    right: 1%;
+    bottom: 1%;
+    /*top: 1%;*/
+    right: 0.5%;
     width: 64px;
     height: 64px;
     background-image: url('../img/up.png');
