@@ -151,7 +151,7 @@
 
         //Video Wallpaper Settings - alter the URL's to your converted videos		
         $("#video_element").wallpaper({
-                source: "img/background.jpg"
+                source: "img/background-beachclub.jpg"
         });
 
         //fitVids
