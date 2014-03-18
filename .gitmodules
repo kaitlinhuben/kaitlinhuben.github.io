@@ -9,3 +9,7 @@
 [submodule "alt-z"]
 	path = projects/alt-z
 	url = git://www.github.com/kaitlinhuben/alt-z.git
+
+[submodule "gesture-video"]
+	path = projects/gesture-video
+	url = git://www.github.com/kaitlinhuben/gesture-video.git
