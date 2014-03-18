@@ -141,8 +141,15 @@
 }
 
 .project-description ul li{
-	color: #fff;
+	color: #ddd;
+	color: rgba(255, 255, 255, 0.75);
 	list-style: circle;
+}
+.project-description .one_third {
+	margin-right:1%;
+}
+.project-description .infopanel a img.extra-hidden {
+	display: none;
 }
 
 /* Misc */
