@@ -68,21 +68,22 @@
     font-size: 16px;
     text-align: center;
     transition: all 0.3s ease-in-out;
-    color: #fff;
+    color: #0875bd;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #0875bd;
+    background-color: #fff;
     letter-spacing: 1px;
     border-radius: 3px;
     float: left;
-    border: 2px solid #0875bd;
-    width: 200px;
+    /*border: 2px solid #fff;*/
+    width: 180px;
     height: 80px;
 }
 
 #projects-list li:hover .single-project-li {
-	border: 2px solid white;
+	/*border: 2px solid #262b30;*/
+	color: #262b30;
 }
 
 .isotope,
@@ -126,15 +127,17 @@
 /* Single project full description */
 .project-description {
 	color: #fff;
-	border-top: 1px solid white;
 }
 
 .project-description h2.title {
+	padding-top: 30px;
 	margin-bottom:5px;
+	border-top: 3px double white;
 }
 
 .project-description h5.category {
-	margin-bottom: 5px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ddd;
 }
 
 .project-description ul li{
