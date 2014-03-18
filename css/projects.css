@@ -139,6 +139,7 @@
 
 .project-description ul li{
 	color: #fff;
+	list-style: circle;
 }
 
 /* Misc */
