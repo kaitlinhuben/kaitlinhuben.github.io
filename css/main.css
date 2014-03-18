@@ -68,6 +68,24 @@ a img, a, img { border: none; outline: none; text-decoration: none;}
     opacity: 0.8;
     filter: alpha(opacity=80); /* For IE8 and earlier */
 }
+#goBackLeft {
+    position: fixed;
+    top: 1%;
+    left: 0.5%;
+    width: 64px;
+    height: 64px;
+    background-image: url('../img/left.png');
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    transition: opacity 0.2s ease-in-out;
+    z-index:999;
+}
+#goBackLeft:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
 input { -webkit-appearance: none; border-radius: 0; }
 input:focus { outline: none;}
 .mobileSpace { visibility:hidden; }
