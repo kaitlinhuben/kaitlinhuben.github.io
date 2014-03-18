@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+
+    <!-- <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png"> TODO -->
+
+    <title>AdventureReady</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="landing">
+
+      <div class="tagline">
+        <h1>Plan your adventure</h1>
+        <h2>Build an itinerary for your next trip &#8226; <a href="about.html" id="learn-more">learn more &raquo;</a></h2>
+      </div>
+      
+      <div class="white-container">
+        <div class="left two-thirds">
+          <h4 style="margin-left: 1em;">Give us a name for your adventure</h4>
+          <input type="search" class="landing form-control input-lg" id="new-itinerary-name" placeholder='"Las Vegas, baby!"' style="width: 60%;">
+          <button type="button" class="landing btn btn-primary" id="create-new-itinerary">Create new</button>
+          <p style="margin-left: 1em;"> or try a sample itinerary for <a href="sample-itinerary.html?id=1">London</a> or <a href="sample-itinerary.html?id=2">New York</a></p>
+        </div>
+
+        <div class="right one-third">
+          <div>
+            <h4 style="margin-left: 1em;">Been here before? Give us your itinerary name or ID</h4>
+            <input type="search" class="landing form-control input-lg" placeholder="Name or ID" id="search-id-input" style="width: 50%">
+            <button type="button" class="landing btn btn-primary" id="search-itinerary-by-id">Search</button>
+    		    <p style="margin-left: 1em;">or search <a href="existing-itineraries.html">existing itineraries</a></p>
+    	  </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/store.js"></script>
+	<script type="text/javascript" src="js/sample-itineraries.js"></script>
+	<script type="text/javascript" src="js/landing.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <!-- <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png"> TODO -->
+
+    <title>Itinerary</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<link href="jquery-ui/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+    
+	<!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+	
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- include Leaflet CSS and JavaScript files -->
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+	 <!--[if lte IE 8]>
+	     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+	 <![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<!-- filled in by main.js on every page -->
+    </div>
+
+    <div id="main-contianer" class="container wide">
+	
+		<div id="itinerary-content" class="left">
+
+			<div class="itinerary-title-action-group">
+				<h1 id="itinerary-title"><span id="itinerary-title-name">Existing view here</span> &nbsp; <span id="itinerary-title-id"></span></h1>
+				<!-- Single button -->
+				<div class="btn-group" id="itinerary-title-action-buttons">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu">
+				    <li><a id="edit-itinerary-name">Change name</a></li>
+				    <li><a href="" id="printer-view-ahref" target="_blank">Printer view</a></li>
+				    <li class="divider"></li>
+				    <li><a id="delete-itinerary" data-toggle="modal" data-target="#myModal">Delete Itinerary</a></li>
+				  </ul>
+				</div>
+			</div>
+			<input id="itinerary-name" class="form-control">
+			<button id="save-itinerary-name" class="btn btn-primary">Save name</button>
+			<button id="cancel-save-itinerary-name" class="btn btn-primary">Cancel</button>
+			<!--<button id="edit-itinerary-name" class="btn btn-primary">Change name</button>-->
+			<div class="modal fade" id="myModal">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h4 class="modal-title list-group-item-heading">Careful!</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>Are you sure you want to delete this itinerary? This cannot be undone.</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" id="yes-delete-this-itinerary" class="btn btn-default btn-danger" data-dismiss="modal">Yes, delete</button>
+			        <button type="button" id="no-cancel-this-delete" class="btn btn-primary btn-primary" data-dismiss="modal">No, cancel</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<button id="show-add-venues" class="btn btn-primary right">Add venues</button>
+			<button id="hide-add-venues" class="btn btn-primary right">Done adding</button>
+			<br><br>
+			<h3 id="no-venues-error">You don't have any venues yet!<br><br>Click Add Venues (over there, in the top right corner) to create your adventure.</h3>
+			<table class="table table-hover">
+				<tbody id="venue-table-tbody">
+				</tbody>
+			</table>
+		</div> <!-- /#itinerary-content.left -->
+		
+		<div id="add-venues-content" class="right">
+			<h1>Add Venues</h1>
+			<!-- holds any error messages -->
+			<div class="alert alert-danger" id="add-venue-error-holder"></div>
+			<div id="builder-controls" style="text-align:center;">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="input-group">
+						  <span class="input-group-addon">Find:</span>
+						  <input type="text" class="form-control" name="query" id="query" placeholder="Starbucks or museum">
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="input-group">
+						  <span class="input-group-addon">near:</span>
+						  <input type="text" class="form-control" name="location" id="location" placeholder="New York, NY or 90210">
+						</div>
+					</div>
+				</div><!--/row-->
+				<div style="padding-top: 10px;">
+					<button type="button" id="search-for-venues" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Search</button><br>
+					<a id="clear-search">Clear search</a>
+				</div>
+				<br><br>
+			</div> <!-- /builder-controls-->
+
+			<hr>
+			
+			<!-- shows loading gif; initially hidden until search is running -->
+			<img src="images/loading.gif" id="loading-image"/>
+			
+			<!-- stores results of search -->
+			<div id="search-results">You haven't searched for anything yet :)</div>
+		</div> <!-- /#add-venues-content.right -->
+
+    </div><!-- /.container -->
+	<div class="container" id="footer">
+		<hr>
+		<div id="map-attribution"><a href="http://leafletjs.com/">Leaflet</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a></div>
+		<!-- filled in by main.js on every page -->
+	</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- custom JavaScript -->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/store.js"></script>
+	<script type="text/javascript" src="js/sample-itineraries.js"></script>
+	<script type="text/javascript" src="js/date-functions.js"></script>
+	<script type="text/javascript" src="js/itinerary.js"></script>
+  </body>
+</html>

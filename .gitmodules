@@ -13,3 +13,7 @@
 [submodule "gesture-video"]
 	path = projects/gesture-video
 	url = git://www.github.com/kaitlinhuben/gesture-video.git
+
+[submodule "fourpeople"]
+	path = projects/fourpeople
+	url = git://www.github.com/kaitlinhuben/fourpeople.git
