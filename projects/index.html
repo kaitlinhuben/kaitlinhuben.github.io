@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="../css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" /> 
 <link rel="stylesheet" href="../css/jquery.fs.wallpaper.css" type="text/css" media="all" />
 <link rel="stylesheet" href="../css/animate.css">
+<link rel="stylesheet" href="../css/projects.css">
 
 <!-- Finally we will load the font from Google Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
@@ -65,52 +66,165 @@
             <div class="content" id="Projects">
 
                 <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">Projects</h2>
-                <p>This is a small selection of some of the projects I've been working on. Head <a href="projects">over here</a> to see the full list.</p> <!-- TODO: create projects index -->
+                <p class="wow fadeInLeftBig" data-wow-ffset="80" data-wow-duration="2s">You can sort my projects by any of the categories. Selecting the project name will take you to the full description.</p>
 
-                <div class="center-align">
+                <div id="categories-filter-div">
+                    <ul class="categories-filter" id="projects-filter">
+                        <li><a href="" class="current transition" data-filter="*">All</a></li>
+                        <li><a href="" class="transition" data-filter=".websites">Websites</a></li>
+                        <li><a href="" class="transition" data-filter=".ecommerce">E-Commerce</a></li>
+                        <li><a href="" class="transition" data-filter=".hacks">Hacks</a></li>
+                        <li><a href="" class="transition" data-filter=".class">Class Projects</a></li>
+                        <li><a href="" class="transition" data-filter=".research">Research</a></li>
+                    </ul>
 
-                    <!-- Start of 3 rows -->
-                    <div class="one_third wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
-                        <div class="infopanel">
-                            <a href="../img/projects/geocash-1.jpg" class="fancybox" rel="group1" ><div class="eye"><img src="../img/projects/geocash-thumb.jpg" alt="GeoCash" /></div></a>
-                            <h5>GeoCash</h5>
-                            <p>A PennApps hackathon project that combines Venmo and Foursquare. Check it out <a href="http://www.geoca.sh">here</a>.</p>
-                        </div>
-                    </div>
+                    <ul id="projects-list">
 
-                    <div class="one_third wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
-                        <div class="infopanel">
-                            <a href="../img/projects/brownian-1.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="../img/projects/brownian-thumb.jpg" alt="Brownian Motion" /></div></a>
-                            <h5>Brownian Motion</h5>
-                            <p>A research project that accurately visualizes random Brownian motion. Check it out <a href="../projects/brownian-motion/index.html">here</a>.</p>
-                        </div>
-                    </div>
+                        <li class="websites ecommerce">
+                            <a href="#Veloz"><div class="single-project-li">Veloz</div></a>
+                        </li>
 
-                    <div class="one_third_last wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">
-                        <div class="infopanel">
-                            <a href="../img/projects/orion-1.jpg" class="fancybox" rel="group3" ><div class="eye"><img src="../img/projects/orion-thumb.jpg" alt="Orion" /></div></a>
-                            <h5>Orion</h5>
-                            <p>An open source project I'm working on through <a href="https://www.facebook.com/notes/facebook-engineering/facebook-open-academy-bringing-open-source-to-cs-curricula/10151806121378920">Open Academy</a>. Learn more <a href="projects">here</a>.</p>
-                        </div>
-                    </div><!-- End of 3 rows -->
+                        <li class="websites hacks">
+                            <a href="#Geocash"><div class="single-project-li">GeoCash</div></a>
+                        </li>
 
+                        <li class="websites research">
+                            <a href="#Brownian"><div class="single-project-li">Brownian Motion</div></a>
+                        </li>
+
+                        <li class="websites">
+                            <a href="#Altz"><div class="single-project-li">alt-z</div></a>
+                        </li>
+
+                        <li class="class">
+                            <a href="#Gesture"><div class="single-project-li">Gesture Video</div></a>
+                        </li>
+
+                        <li class="class">
+                            <a href="#Fourpeople"><div class="single-project-li">FourPeople</div></a>
+                        </li>
+
+                        <li class="websites class">
+                            <a href="#Orion"><div class="single-project-li">Orion</div></a>
+                        </li>
+                    </ul>
                 </div>
+
 
             </div><!-- End of Content -->
             
         </div><!-- End of White Container -->
-        
-        
-        
-        <!-- CONTACT FORM SECTION -->
+
+        <!-- start individual projects -->
+
+        <div class="whitecontainer project-description">
+            <div class="content" id="Veloz">
+                <h2 class="title">Veloz</h2>
+                <h5 class="category">Websites and E-commerce</h5>
+                <div class="clear"></div>
+                <p>As an intern with The Veloz Group during the summer of 2013, I worked on creating and maintaining a variety of websites for them.</p>
+                <ul>
+                    <li>The Veloz Group site</li>
+                    <li>Veloz Recruiting</li>
+                    <li>My Touch Up Paint</li>
+                    <li>Fashionable Furnishings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="whitecontainer project-description">
+            <div class="content" id="Geocash">
+                <h2 class="title">GeoCash</h2>
+                <h5 class="category">Websites and Hacks</h5>
+                <div class="clear"></div>
+                <p>As an intern with The Veloz Group during the summer of 2013, I worked on creating and maintaining a variety of websites for them.</p>
+                <ul>
+                    <li>The Veloz Group site</li>
+                    <li>Veloz Recruiting</li>
+                    <li>My Touch Up Paint</li>
+                    <li>Fashionable Furnishings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="whitecontainer project-description">
+            <div class="content" id="Brownian">
+                <h2 class="title">Brownian Motion</h2>
+                <h5 class="category">Websites and Research</h5>
+                <div class="clear"></div>
+                <p>As an intern with The Veloz Group during the summer of 2013, I worked on creating and maintaining a variety of websites for them.</p>
+                <ul>
+                    <li>The Veloz Group site</li>
+                    <li>Veloz Recruiting</li>
+                    <li>My Touch Up Paint</li>
+                    <li>Fashionable Furnishings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="whitecontainer project-description">
+            <div class="content" id="Altz">
+                <h2 class="title">alt-z</h2>
+                <h5 class="category">Websites</h5>
+                <div class="clear"></div>
+                <p>As an intern with The Veloz Group during the summer of 2013, I worked on creating and maintaining a variety of websites for them.</p>
+                <ul>
+                    <li>The Veloz Group site</li>
+                    <li>Veloz Recruiting</li>
+                    <li>My Touch Up Paint</li>
+                    <li>Fashionable Furnishings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="whitecontainer project-description">
+            <div class="content" id="Gesture">
+                <h2 class="title">Gesture Video</h2>
+                <h5 class="category">Class Projects</h5>
+                <div class="clear"></div>
+                <p>As an intern with The Veloz Group during the summer of 2013, I worked on creating and maintaining a variety of websites for them.</p>
+                <ul>
+                    <li>The Veloz Group site</li>
+                    <li>Veloz Recruiting</li>
+                    <li>My Touch Up Paint</li>
+                    <li>Fashionable Furnishings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="whitecontainer project-description">
+            <div class="content" id="Fourpeople">
+                <h2 class="title">FourPeople</h2>
+                <h5 class="category">Class Projects</h5>
+                <div class="clear"></div>
+                <p>As an intern with The Veloz Group during the summer of 2013, I worked on creating and maintaining a variety of websites for them.</p>
+                <ul>
+                    <li>The Veloz Group site</li>
+                    <li>Veloz Recruiting</li>
+                    <li>My Touch Up Paint</li>
+                    <li>Fashionable Furnishings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="whitecontainer project-description">
+            <div class="content" id="Orion">
+                <h2 class="title">Orion</h2>
+                <h5 class="category">Websites and Class Projects</h5>
+                <div class="clear"></div>
+                <p>As an intern with The Veloz Group during the summer of 2013, I worked on creating and maintaining a variety of websites for them.</p>
+                <ul>
+                    <li>The Veloz Group site</li>
+                    <li>Veloz Recruiting</li>
+                    <li>My Touch Up Paint</li>
+                    <li>Fashionable Furnishings</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- end individual projects -->
 
         <!-- Start of Grey Container -->
         <div class="greycontainer">
 
             <!-- Start of Content -->
-            <div class="content centered" id="Contact">
+            <div class="content centered" id="goBackDiv">
 
-                <a href="../index.html"><img src="../img/left.png" /><h2>Go Back</h2></a>
+                <a href="../index.html"><img src="../img/left.png"/><span id="goBackText">Go Back</span></a>
 
             </div><!-- End of Content -->
 
@@ -137,6 +251,7 @@
 </div><!-- End of Wrapper -->
 <!-- arrow to go back to main page -->
 <a href="../index.html"><div id="goBackLeft"></div></a>
+<div id="toTop"></div>
 
 <!--Loading Scripts -->
 <!-- First we will load jQuery -->
@@ -160,5 +275,7 @@ if (!window.jQuery) {
 <!--[if IE]><script type="text/javascript" src="../excanvas.js"></script><![endif]-->
 <script type="text/javascript" src="../js/app.js"></script>
 <script type="text/javascript" src="../js/wow.min.js"></script>
+<script type="text/javascript" src="../js/isotope.js"></script>
+<script type="text/javascript" src="../js/custom-isotope.js"></script>
 </body>
 </html>
