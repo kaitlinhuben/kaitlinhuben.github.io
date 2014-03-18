@@ -5,3 +5,7 @@
 [submodule "brownian-motion"]
 	path = projects/brownian-motion
 	url = git://www.github.com/kaitlinhuben/brownian-motion.git
+
+[submodule "alt-z"]
+	path = projects/alt-z
+	url = git://www.github.com/kaitlinhuben/alt-z.git
