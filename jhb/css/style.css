@@ -1,0 +1,14 @@
+/* For fixed top navbar */
+body {
+  /*min-height: 2000px;*/
+  padding-top: 70px;
+}
+
+/* For dropdown on hover (in addition to click) */
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+	display: block;
+}
+
+.spaced-list li{
+	padding-bottom:1em;
+}
