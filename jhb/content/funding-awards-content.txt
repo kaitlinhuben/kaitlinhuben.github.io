@@ -1,0 +1,33 @@
+Title=Funding and Awards
+      <div class="row">
+	  
+		<div class="col-xs-12">
+			<h2>Funding & Awards</h2>
+			<p>I would like to acknowledge funding and support from NSF through grants:</p>
+			<p><b>Funding sources from NSF provided under the grants DMS-0806145 / 0902075, CAREER award CMMI-0846816 and CMMI-1069064 are gratefully acknowledged. Previous support includes NSF grant 0595595.</b></p>
+			<br>
+			
+			<p>My research group and I have been fortunate to receive several best publication awards (detailed in my <a href="publications.html">publication list</a>).</p>
+			<br>
+			<p>I have received the following awards and recognition:</p>
+			<ul>
+				<li>Presidential Early Career Award for Scientists and Engineers (PECASE).</li>
+				<li>Erlang Prize 2010 given by the INFORMS Applied Probability Society every two years to a young applied probabilist.</li>
+				<li>Stanford University Distinguished Alumni Scholar Lecture in 2012.</li>
+				<li>ITAM (Instituto Tecnol&#243;gico Aut&#243;nomo de M&#233;xico) 2012 Premio al M&#233;rito Profesional (Professional Merit Award).</li>
+			</ul>
+			<br>
+			<p>I have also been fortunate to receive support through the following funds and fellowships:</p>
+			<ul>
+				<li>Milton Fund (Harvard University),</li>
+				<li>Professional Schools Research Fellowship Award (Columbia University),</li>
+				<li>Rodriguez Family Junior Faculty Award (Columbia University).</li>
+			</ul>
+			<br>
+			
+			<p>I also acknowledge support when I was a PhD student at Stanford through the Thomas Ford and William Lindvill fellowships. </p>
+			<br>
+			<p>Finally, I would like to acknowledge support from CONACYT (the Mexican NSF).</p>
+			<br>
+		</div>
+      </div>

@@ -1,0 +1,52 @@
+Title=Jose H. Blanchet
+      <div class="row">
+	  
+		<!-- title -->
+		<div class="col-xs-12">
+			<h1>Jose H. Blanchet</h1>
+		</div>
+		
+		<!-- left 1/4 -->
+		<div class="col-xs-12 col-md-3">
+			<img src="img/headshot.gif" alt="Jose Blanchet" class="img-thumbnail" /><br>
+			Ph.D. Stanford OR 2004<br>
+			M.Sc. Stanford OR 2001<br>
+			B.Sc. ITAM (Mex) App. Math 2000<br>
+			B.Sc. ITAM (Mex) Act. Sc. 2000
+		</div>
+		
+		<!-- middle 1/3 -->
+		<div class="col-xs-12 col-md-4">
+			<h4><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Address</h4>
+			<a href="http://www.ieor.columbia.edu">IEOR Department, Columbia University,</a><br>
+			340 W. Mudd Building,<br>
+			500 West 120th Street, New York, NY 10027-6699<br>
+			<br>
+			<a href="http://www.stat.columbia.edu">Statistics Department, Columbia University,</a><br>
+			1040 School of Social Work<br>
+			1255 Amsterdam Avenue, New York, NY 10027<br>
+			<br>
+			
+			<h4><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Email</h4>
+			<a href="mailto:jose.blanchet@columbia.edu">jose.blanchet321@columbia.edu</a> <br>
+			(Remove the numbers to send me an email)<br>
+			<br>
+			
+			<h4><span class="glyphicon glyphicon-earphone"></span>&nbsp;Office Phone</h4>
+			(212) 851-0796<br>
+			<br>
+			
+			<h4><span class="glyphicon glyphicon-print"></span>&nbsp;&nbsp;Fax</h4>
+			(212) 854-8103<br>
+		</div>
+		<!-- right 1/3 -->
+		<div class="col-xs-12 col-md-5">
+			<h4>Seminar</h4>
+			<a href="https://sites.google.com/site/aprseminar/">Applied Probability and Risk Seminar</a>
+			<br>
+			<br>
+			
+			<h3>NOTE:<h3>
+			<h4>Funding from NSF grants DMS-0806145 / 0902075, CAREER award CMMI-0846816 and CMMI-1069064 is gratefully acknowledged. See <a href="publications.html">publication page</a> for detailed information. Previous support includes NSF grant 0595595.</h4>
+		</div>
+      </div>

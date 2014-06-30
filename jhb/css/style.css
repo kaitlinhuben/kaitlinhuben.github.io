@@ -3,12 +3,96 @@ body {
   /*min-height: 2000px;*/
   padding-top: 70px;
 }
-
+/* override bootstrap.min.css fonts */
+html, body, p, a, h1, h2, h3, h4, h5, h6 {
+	font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h2 {
+	color: #2a6496;
+}
 /* For dropdown on hover (in addition to click) */
 ul.nav li.dropdown:hover > ul.dropdown-menu {
 	display: block;
 }
 
+/* Overriding default navbar */
+div.navbar-default {
+	background-color: #428bca;
+	border-color: #2a6496;
+	color: #efefef;
+}
+div.navbar-default .navbar-brand , div.navbar-default .navbar-text a{
+	color: #efefef;
+}
+div.navbar-default .navbar-nav>li>a {
+	color: #efefef;
+}
+div.navbar-default .navbar-nav>li>a:hover, div.navbar-default .navbar-brand:hover {
+	color: #193C5A;
+}
+/*div.navbar-default .navbar-nav>li:hover {
+	background-color: #efefef;
+}*/
+img#navbar-crown {
+	height: 20px;
+	vertical-align: -4px;
+}
+div.navbar-default .navbar-text a:hover {
+	text-decoration: none;
+	color: #193C5A;
+}
+
 .spaced-list li{
 	padding-bottom:1em;
+}
+
+div#bio, div#tree, div#personal {
+	height: 40px;
+}
+
+/*
+	Styling for the academic tree table
+*/
+table#academic-tree {
+	margin: 0 auto;
+	text-align: center;
+}
+
+table span.tree-label {
+	font-weight: normal; /* override label's bold */
+}
+
+table#academic-tree td.about-spacer {
+	padding: 2em;
+}
+
+/* 
+	Styling for the table of photos on the about page 
+*/
+table#about-photos {
+	margin: 0 auto; /* to center the table on the page */
+	text-align: center;
+}
+
+table#about-photos td.about-photo-spacer {
+	padding: 2em;
+}
+
+	/* rounded corners and same height on both photos */
+table#about-photos img {
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	
+	height: 316px;
+}
+
+table#about-photos td#about-caption-1-td div#about-caption-1{
+	width: 310px;
+	margin: 0 auto;
+}
+
+table#about-photos td#about-caption-2-td  {
+	width: 340px;
 }

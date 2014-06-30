@@ -1,0 +1,30 @@
+Title=Courses
+     <div class="row">
+	  
+		<div class="col-xs-12">
+			<h2>Courses</h2>
+			<p>These include courses I have taught and may teach in the future.</p>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<h4>Columbia (2008 - Present)</h4>
+			<ul>
+				<li>IEOR E4404: Stochastic Simulation</li>
+				<li>IEOR E4602: Quantitative Risk Management</li>
+				<li><a href="http://www.columbia.edu/~jb2814/IEOR6801.htm">IEOR E6801: Monte Carlo Methods in Engineering and Science</a></li>
+				<li><a href="http://www.columbia.edu/~jb2814/CourseLDM.htm">Large Deviations and Monte Carlo</a></li>
+				<li>Monte Carlo Methods for Stochastic Networks</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<h4>Harvard (2004 - 2007)</h4>
+			<ul>
+				<li>Stat 110: Introduction to Probability</li>
+				<li>Stat 131 / 231: Time Series Analysis</li>
+				<li><a href="http://isites.harvard.edu/icb/icb.do?keyword=k21334">Stat 212: Topics in Probability and Mathematical Statistics</a></li>
+				<li>Stat 271: Advanced Stochastic Processes</li>
+				<li>Stat 323: Statistical and Computational Methods in Finance</li>
+				<li>Stat 371: Topics in Applied Probability</li>
+				<li>Stat 311: Monte Carlo Methods in Scientific Computing</li>
+			</ul>
+		</div>
+      </div>

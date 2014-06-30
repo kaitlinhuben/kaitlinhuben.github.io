@@ -1,0 +1,11 @@
+Title=Publications
+      <div class="row">
+	  
+		<div class="col-xs-12">
+			
+			<h2 id="bio">Publications</h2>
+			<p>
+				Coming soon
+			</p>
+		</div>
+      </div>

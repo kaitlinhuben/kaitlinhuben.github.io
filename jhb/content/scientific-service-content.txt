@@ -1,0 +1,26 @@
+Title=Scientific Service
+      <div class="row">
+	  
+		<div class="col-xs-12 col-md-6">
+			<h2>Editorial Service</h2>
+			<ul>
+				<li>Guest Editor (with Michel Mandjes) of QUESTA (2007): Special Issue on Rare Event Simulation for Queues.</li>
+				<li>Guest Editor (with Gareth Roberts) of QUESTA (2013): Special Issue on Simulation of Stochastic Networks.</li>
+			</ul>
+			
+			<h4>Current Associate Editor of:</h4>
+			<ul>
+				<li>Advances in Applied Probability</li>
+				<li>Journal of Applied Probability</li>
+				<li>Mathematics of Operations Research</li>
+				<li>Queueing Systems: Theory and Applications (QUESTA)</li>
+				<li>Stochastic Models</li>
+				<li>Stochastic Systems</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<h2>Additional Service</h2>
+			<p>I have been part of the scientific committee of several Applied Probability and Monte Carlo methods activities, including: Applied Probability Conference 2011, Newton Institute Workshop in Monte Carlo Methods 2010, and the semester program at ICERM on Computational Challenges in Probability 2012. I've organized invited sessions in conferences and meetings from INFORMS and IMS (the Operations Research and Statistics professional societies in the US, respectively.)</p>
+			<p>I have served in award committees such as the INFORMS Nicholson Prize committee (as member in 2012 and chair 2013). I have also served in NSF grant panels.</p>
+		</div>
+      </div>
