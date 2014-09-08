@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Help</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+	<!-- Custom font: Google's Roboto -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">&laquo;&nbsp;Go back to homepage</a>
+        </div>
+      </div>
+    </div>
+
+	<!-- Main body of page -->
+    <div class="container">
+		<h2>Help & Documentation</h2>
+		<ul>
+			<li><a href="#help-directory-structure">Directory structure</a></li>
+			<li><a href="#getting-started">Getting started</a></li>
+			<li><a href="#help-how-to-compile-site">How to compile site</a></li>
+			<li><a href="#help-making-content-changes-to-site">Making content changes to site</a></li>
+			<li><a href="#help-making-design-changes-to-site">Making design changes to site</a></li>
+		</ul>
+		
+		<div id="help-directory-structure" class="spacer-40"></div>
+		<h3>Directory Structure</h3>
+		<pre><code>site-folder
+|-- assets
+    |-- css
+        |-- *.css                (all css [styling] used on site)
+    |-- fonts
+        |-- glyphicons*          (icons used on site)
+    |-- img
+        |-- *                    (all images used on site)
+    |-- js
+        |-- *.js                 (all javascript used on site)
+|-- content
+    |-- template.html            (the template that gets filled in for every page - contains header, footer, and container)
+    |-- website-pages.txt        (the list of pages to be compiled)
+    |-- *-content.txt            (the content for each of the pages to be compiled)
+|-- doc  
+    |-- help.html                (this file)
+    |-- README.txt               (plaintext version of this file)
+|-- papers
+    |-- *.bib                    (the bib file used for publications page)
+    |-- *.tex                    (the tex files used for publications page)
+	|-- *.pdf                    (the pdf files linked to by publications pages)
+	|-- template.html            (the template for each publication page)
+|-- *.java                       (the Java files for compilation)
+|-- *.html                       (all pages on the website)</code></pre>
+<a href="#">Back to top</a>
+
+		<div id="getting-started" class="spacer-40"></div>
+		<h3>Getting started</h3>
+		<p>Put all .tex and .pdf files in the <code>papers</code> folder. Also put the .bib file in the <code>papers</code> folder.
+		
+		<div id="help-how-to-compile-site" class="spacer-40"></div>
+		<h3>How to compile site</h3>
+		<p>From the root directory, type <code>javac *.java</code> to compile all necessary Java files.</p>
+		<p>Then, type <code>java WebsiteCompiler</code> to compile the website.
+		<p>If all goes well, you will see a success message. If not, you should see a descriptive error (typically related to misnamed files) that can help you proceed.</p>
+		<br>
+		<p>If you only want to compile the Publications page, you can type <code>java WebsiteCompiler -p</code>. This will leave all other files alone and only recompile the Publications page and all subpages.</p>
+		<a href="#">Back to top</a>
+
+		<div id="help-making-content-changes-to-site" class="spacer-40"></div>
+		<h3>Making content changes to site</h3>
+		<p>
+			The content for each non-publications page is located in the <code>content</code> folder of the same name. 
+			If you want to change what's on the homepage, for example, you want to change <code>index.html</code>, so go to <code>content/index-content.txt</code>. 
+			If you wanted to change the about page, go to <code>content/about-content.txt</code>. 
+		</p>
+
+		<p>If you want to recompile a single page and not the entire site, you can temporarily do one of two things:</p>
+		<ol>
+			<li>Change <code>WebsiteCompiler.java</code>: find the variable <code>LIST_OF_WEBSITE_PAGES</code> and change it so it is the name of the new file containing the page(s) you want to recompile.</li>
+			<li>Edit <code>content/website-pages.txt</code>: leave only the pages you want to recompile.</li>
+		</ol>
+		<p>Either way, make sure to revert the changes after you are done. Also note that there is no downside to compiling the entire site (other than the fact that it might take a little longer.)</p>
+		
+		<p>Note that changes to the "Publications" page and sub-pages will be a little tougher since that page is handled by a separate class. If you're feeling brave, dive into <code>PublicationsPageCreator.java</code> in the root directory.</p>
+		<a href="#">Back to top</a>
+		
+		<div id="help-making-design-changes-to-site" class="spacer-40"></div>
+		<h3>Making design changes to site</h3>
+		<p>The website is based on the Bootstrap framework. You can learn more at the <a href="http://getbootstrap.com/">Bootstrap site</a>.</p>
+		<p>
+			Generally speaking, the main content on each page is in a <code>container div</code>.
+			Those containers are split into <code>row div</code>s, which are split into 12 sections. 
+			When you see a class like <code>col-md-6</code>, that means for medium size screens and larger, use 6 of the available 12 sections - aka, use half of the page.
+		</p>
+		<p>For colors, styling, etc., you will most likely want to edit <code>assets/css/style.css</code>.</p>
+		<a href="#">Back to top</a>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </body>
+</html>

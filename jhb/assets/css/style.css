@@ -30,23 +30,24 @@ div.navbar-default .navbar-nav>li>a {
 div.navbar-default .navbar-nav>li>a:hover, div.navbar-default .navbar-brand:hover {
 	color: #193C5A;
 }
-/*div.navbar-default .navbar-nav>li:hover {
-	background-color: #efefef;
-}*/
+div.navbar-default .navbar-nav>li:hover {
+	/*background-color: #efefef;*/
+	border-bottom: 2px solid #193C5A;
+}
 img#navbar-crown {
-	height: 20px;
 	vertical-align: -4px;
 }
 div.navbar-default .navbar-text a:hover {
 	text-decoration: none;
-	color: #193C5A;
+	color: #081826;
+	opacity: 0.5;
 }
 
 .spaced-list li{
 	padding-bottom:1em;
 }
 
-div#bio, div#tree, div#personal {
+div.spacer-40, div#bio, div#tree, div#personal {
 	height: 40px;
 }
 
@@ -95,4 +96,8 @@ table#about-photos td#about-caption-1-td div#about-caption-1{
 
 table#about-photos td#about-caption-2-td  {
 	width: 340px;
+}
+
+p.bibtex {
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }

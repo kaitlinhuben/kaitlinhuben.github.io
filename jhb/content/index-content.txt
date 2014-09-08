@@ -8,7 +8,7 @@ Title=Jose H. Blanchet
 		
 		<!-- left 1/4 -->
 		<div class="col-xs-12 col-md-3">
-			<img src="img/headshot.gif" alt="Jose Blanchet" class="img-thumbnail" /><br>
+			<img src="assets/img/headshot.gif" alt="Jose Blanchet" class="img-thumbnail" /><br>
 			Ph.D. Stanford OR 2004<br>
 			M.Sc. Stanford OR 2001<br>
 			B.Sc. ITAM (Mex) App. Math 2000<br>

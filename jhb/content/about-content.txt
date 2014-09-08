@@ -7,7 +7,7 @@ Title=About
 			<a href="#tree"><button type="button" class="btn btn-lg btn-default">Academic Tree</button></a>&nbsp;&nbsp;
 			<a href="#personal"><button type="button" class="btn btn-lg btn-default">Personal</button></a>
 			
-			<div id="bio"></div>
+			<div id="bio" class="spacer-40"></div>
 			<h2 id="bio-title">Academic Bio</h2>
 			<p>
 				Jose Blanchet is a faculty member in the departments of IEOR and Statistics at Columbia University. 
@@ -20,7 +20,7 @@ Title=About
 			</p>
 			<p><a href="#">Back to top</a></p>
 			
-			<div id="tree"></div>
+			<div id="tree" class="spacer-40"></div>
 			<h2 id="tree-title">Academic Tree</h2>
 			<table id="academic-tree">
 				<tbody><tr>
@@ -106,7 +106,7 @@ Title=About
 			</tbody></table>
 			<p><a href="#">Back to top</a></p>
 			
-			<div id="personal"></div>
+			<div id="personal" class="spacer-40"></div>
 			<h2 id="personal-title">Personal</h2>
 			<h4>(Last updated in 2008)</h4>
 			<p>
@@ -118,13 +118,13 @@ Title=About
 			</p>
 			<table id="about-photos">
 				<tbody><tr id="about-photos-img-row">
-					<td id="about-photo-img-1-td"><img src="img/mitla.gif"></td>
+					<td id="about-photo-img-1-td"><img src="assets/img/mitla.gif" alt="Mitla, Oaxaca"></td>
 					<td class="about-photo-spacer">&nbsp;</td>
-					<td id="about-photo-img-2-td"><img src="img/golf.jpg"></td>
+					<td id="about-photo-img-2-td"><img src="assets/img/golf.jpg" alt="Citlalli and I at a golf club in Mexio"></td>
 				</tr>
 				<tr id="about-photos-caption-row">
 					<td id="about-caption-1-td">
-						<div id="about-caption-1">This photo was taken at a place called Mitla which is, with Monte Albán, one of the most important archaeological regions of my native state, Oaxaca, in southern Mexico.</div>
+						<div id="about-caption-1">This photo was taken at a place called Mitla which is, with Monte Alb&#225;n, one of the most important archaeological regions of my native state, Oaxaca, in southern Mexico.</div>
 					</td>
 					<td class="about-photo-spacer">&nbsp;</td>
 					<td id="about-caption-2-td">

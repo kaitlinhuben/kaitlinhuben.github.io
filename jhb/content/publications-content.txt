@@ -3,9 +3,17 @@ Title=Publications
 	  
 		<div class="col-xs-12">
 			
-			<h2 id="bio">Publications</h2>
-			<p>
-				Coming soon
-			</p>
+			<h2>Publications</h2>
+			
+			<p><b>Funding sources from NSF provided under the grants DMS-0806145 / 0902075, CAREER award CMMI-0846816 and CMMI-1069064 are gratefully acknowledged. Previous support includes NSF grant 0595595.</b></p>
+			
+			<p><em>Recurrent theme in many of the following articles: Interplay between probability theory and optimal design of algorithms. In other words, what coarse analysis (typically done to obtain asymptotics) tells you about the design of efficient Monte Carlo simulation methods.</em></p>
+		
 		</div>
+      </div>
+      <div class="row">
+		<div class="col-xs-12">
+			<h3>Publications and Scholarly Works <small>(in chronological order within sections)</small></h3>
+		</div>
+		
       </div>
