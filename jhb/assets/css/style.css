@@ -10,6 +10,12 @@ html, body, p, a, h1, h2, h3, h4, h5, h6 {
 h2 {
 	color: #2a6496;
 }
+
+#logo {
+	font-family: Playball, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 150%;
+}
+
 /* For dropdown on hover (in addition to click) */
 ul.nav li.dropdown:hover > ul.dropdown-menu {
 	display: block;
@@ -34,9 +40,6 @@ div.navbar-default .navbar-nav>li:hover {
 	/*background-color: #efefef;*/
 	border-bottom: 2px solid #193C5A;
 }
-img#navbar-crown {
-	vertical-align: -4px;
-}
 div.navbar-default .navbar-text a:hover {
 	text-decoration: none;
 	color: #081826;
@@ -49,6 +52,15 @@ div.navbar-default .navbar-text a:hover {
 
 div.spacer-40, div#bio, div#tree, div#personal {
 	height: 40px;
+}
+
+div.spacer-30 {
+	height: 30px;
+}
+
+img#homepage-crown {
+	height: 40px;
+	vertical-align: -10px;
 }
 
 /*

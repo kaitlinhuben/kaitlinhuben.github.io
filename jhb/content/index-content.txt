@@ -3,7 +3,7 @@ Title=Jose H. Blanchet
 	  
 		<!-- title -->
 		<div class="col-xs-12">
-			<h1>Jose H. Blanchet</h1>
+			<h1>Jose H. Blanchet &nbsp; &nbsp;<small><a href="http://www.columbia.edu"><img src="assets/img/crown-blue.png" id="homepage-crown"/>Columbia University</a></small></h1>
 		</div>
 		
 		<!-- left 1/4 -->
