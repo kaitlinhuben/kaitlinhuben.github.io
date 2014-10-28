@@ -1,0 +1,36 @@
+body {
+	margin: 0px;
+	font-family: Raleway, Helvetica, Arial, sans-serif;
+}
+
+div.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	padding: 5px 0px 10px 0px;
+	background-color: #097ecb; 
+	color: white;
+	font-size: 30px;
+	font-family: Playball, Raleway, Helvetica, Arial, sans-serif;
+}
+
+div.container {
+	height: 1000px;
+	width: 100%;
+	padding-top: 50px;
+}
+
+div.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	padding: 5px 0px 10px 0px;
+	background-color: #097ecb; 
+	color: white;
+	font-size: 30px;
+	font-family: Playball, Raleway, Helvetica, Arial, sans-serif;
+}
