@@ -1,7 +1,17 @@
 body {
 	margin: 0px;
 	font-family: Raleway, Helvetica, Arial, sans-serif;
+	font-size: 18px;
 }
+a, a:visited {
+	color: #097ecb;
+	text-decoration: none;
+}
+a:hover{
+	color: #097ecb;
+	text-decoration: underline;
+}
+
 
 div.navbar {
 	position: fixed;
@@ -17,7 +27,6 @@ div.navbar {
 }
 
 div.container {
-	height: 1000px;
 	width: 100%;
 	padding-top: 50px;
 }
@@ -25,9 +34,27 @@ div.container div.quote {
 	width: 100%;
 	background-color: #097ecb; 
 	color: white;
+	font-size: 20px;
 }
 div.container div.quote div.quote-content {
-	padding: 0px 50px;
+	padding: 10px 50px;
+}
+div.container div.content {
+	padding: 10px 50px;
+}
+div.button {
+	border: 1px solid #097ecb;
+	border-radius: 5px;
+	color: #097ecb;
+	padding: 5px;
+	position: absolute;
+}
+div.button:hover {
+	cursor: pointer;
+}
+
+div.next-button {
+	right: 50px;
 }
 
 div.footer {
@@ -42,14 +69,11 @@ div.footer {
 	font-size: 20px;
 	font-family: Playball, Raleway, Helvetica, Arial, sans-serif;
 }
-div.footer a {
+div.footer a, div.footer a:visited {
 	color: white;
 	text-decoration: none;
 }
 div.footer a:hover {
-	text-decoration: underline;
-}
-div.footer a:visited {
 	color: white;
-	text-decoration: none;
+	text-decoration: underline;
 }
