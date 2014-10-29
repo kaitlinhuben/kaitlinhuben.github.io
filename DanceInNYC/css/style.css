@@ -13,7 +13,7 @@ a:hover{
 }
 
 
-div.navbar {
+div#navbar {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -23,25 +23,38 @@ div.navbar {
 	background-color: #097ecb; 
 	color: white;
 	font-size: 30px;
-	font-family: Raleway, Helvetica, Arial, sans-serif;
 }
 
 div.container {
 	width: 100%;
 	padding-top: 50px;
 }
-div.container div.quote {
+
+div.section {
+	margin-bottom: 250px;
+}
+
+div.quote {
 	width: 100%;
 	background-color: #097ecb; 
 	color: white;
 	font-size: 20px;
 }
-div.container div.quote div.quote-content {
+div.quote div.quote-content {
 	padding: 10px 50px;
 }
-div.container div.content {
+div.content {
 	padding: 10px 50px;
 }
+ul.content-list {
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px 0px;
+}
+ul.content-list li {
+	padding-bottom: 20px;
+}
+
 div.button {
 	border: 1px solid #097ecb;
 	border-radius: 5px;
@@ -53,11 +66,7 @@ div.button:hover {
 	cursor: pointer;
 }
 
-div.next-button {
-	right: 50px;
-}
-
-div.footer {
+div#footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -67,13 +76,16 @@ div.footer {
 	background-color: #097ecb; 
 	color: white;
 	font-size: 20px;
-	font-family: Playball, Raleway, Helvetica, Arial, sans-serif;
 }
-div.footer a, div.footer a:visited {
+div#footer a, div#footer a:visited {
 	color: white;
 	text-decoration: none;
 }
-div.footer a:hover {
+div#footer a:hover {
 	color: white;
 	text-decoration: underline;
+}
+
+div.spacer-50 {
+	height: 50px;
 }
