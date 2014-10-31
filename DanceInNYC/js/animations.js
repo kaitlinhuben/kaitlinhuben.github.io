@@ -10,9 +10,19 @@ $(document).ready(function() {
 	navHeight = $navbar.outerHeight();
 	
 	// set up all scrolls
+	$('.go-to-top').click(function() {
+		$('body').animate({
+			scrollTop: $zeroth.position().top - navHeight
+		  }, SCROLL_TIME);
+	});
 	$('#go-to-1').click(function() {
 		$('body').animate({
 			scrollTop: $first.position().top - navHeight
+		  }, SCROLL_TIME);
+	});
+	$('#go-to-2').click(function() {
+		$('body').animate({
+			scrollTop: $second.position().top - navHeight
 		  }, SCROLL_TIME);
 	});
 	
