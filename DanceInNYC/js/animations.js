@@ -50,12 +50,14 @@ $(document).ready(function() {
 	  }, 
 	  // time
 	  FADE_TIME, 
-	  //callback
+	  //callback - fade top section in
 	  function() {
 		$zeroth.animate({
 			opacity: 1
 		}, 
+		//time
 		FADE_TIME,
+		// callback - fade footer in
 		function (){
 			$footer.animate({
 				opacity: 1
