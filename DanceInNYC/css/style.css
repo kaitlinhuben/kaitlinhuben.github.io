@@ -24,6 +24,9 @@ div#navbar {
 	color: white;
 	font-size: 30px;
 }
+div#photo-banner {
+	text-align: center;
+}
 
 div.container {
 	width: 100%;
@@ -59,7 +62,7 @@ div.quote div.quote-citation {
 }
 div.content {
 	padding: 10px 50px;
-	height: 1000px;
+	height: 1200px;
 }
 ul.content-list {
 	list-style-type: none;
@@ -87,6 +90,7 @@ div.button {
 }
 div.button:hover {
 	cursor: pointer;
+	background: #eee;
 }
 div.button.go-to-top {
 	right: 50px;
