@@ -23,27 +23,27 @@ $(document).ready(function() {
 	// set up all scroll handlers
 	// ----------------------------------------------------
 	$('.go-to-top').click(function() {
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $zeroth.position().top - navHeight
 		  }, SCROLL_TIME);
 	});
 	$('#go-to-1').click(function() {
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $first.position().top - navHeight
 		  }, SCROLL_TIME);
 	});
 	$('#go-to-2').click(function() {
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $second.position().top - navHeight
 		  }, SCROLL_TIME);
 	});
 	$('#go-to-3').click(function() {
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $third.position().top - navHeight
 		  }, SCROLL_TIME);
 	});
 	$('#go-to-4').click(function() {
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $fourth.position().top - navHeight
 		  }, SCROLL_TIME);
 	});
