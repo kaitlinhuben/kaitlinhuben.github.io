@@ -1,4 +1,8 @@
 $(document).ready(function() {	
+	// resize image to fit
+	thirdWidth = $('#move-fast-container').outerWidth();
+	$('#move-fast').width(thirdWidth-5);
+	
 	// ----------------------------------------------------
 	// get all section elements
 	// ----------------------------------------------------
