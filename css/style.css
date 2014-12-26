@@ -25,6 +25,18 @@ ul li {
 	padding-bottom: 0.5em;
 }
 
+div.sm-icon-wrap a:hover {
+	color: #00aad4 !important;
+}
+
+ul.nav {
+	margin: 0;
+}
+
+ul.nav a:hover {
+	color: #00aad4 !important;
+}
+
 .pe-spacer.size40 {
 	height:40px;
 }
@@ -40,4 +52,41 @@ ul li {
 .footer {
 	border-top-color: white;
 	padding-top: 10px;
+}
+
+img#footer-logo {
+	height: 1.5em;
+}
+
+/* ========================================================
+   Resume styling
+   ========================================================
+*/
+.resume-links {
+	text-align: center;
+}
+.resume-links a.read-more {
+	font-size: 125%;
+	padding: 10px 0px;
+}
+.resume-links a.read-more:hover {
+	color: #fff !important;
+}
+
+.resume-title, .resume-place {
+	color: #006680;
+}
+.resume-place a {
+	color: #00aad4;
+}
+.resume-dates {
+	font-style: italic;
+}
+
+.up-arrow:hover,.up-arrow img:hover {
+	opacity: 0.75;
+}
+.up-arrow img {
+	height: 30px;
+	margin-bottom: 5px;
 }
