@@ -1,21 +1,43 @@
 /* ========================================================
-   Homepage styling
+   General style overrides 
    ========================================================
 */
-div#homepage-large-logo {
-	height: 100%;
-	width: 100%;
+p {
+	font-size: 16px;
 }
-div#homepage-large-logo img {
-	height: 99%;
-	margin: 0 auto;
+
+p.intro {
+	font-size: 24px;
+	color: #006680;
+}
+
+a:hover {
+	color: #006680 !important;
+}
+
+ul {
+	list-style: circle;
+	font-size: 16px;
+	margin: -1em 0em 1.5em 1em;
+}
+
+ul li {
+	padding-bottom: 0.5em;
+}
+
+.pe-spacer.size40 {
+	height:40px;
+}
+
+.info-bar {
+	background-color: #00222b;
 }
 
 /* ========================================================
    Footer styling
    ========================================================
 */
-#footer-logo {
-	height: 1.5em;
-	float: left;
+.footer {
+	border-top-color: white;
+	padding-top: 10px;
 }
