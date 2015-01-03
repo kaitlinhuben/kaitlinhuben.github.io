@@ -38,7 +38,7 @@
 }
 
 /* ========================================================
-   Filter projects styling
+   Filter project tiles styling
    ========================================================
 */
 #projects-list {
@@ -78,4 +78,26 @@
 
 #projects-list li:hover .single-project-li {
 	color: #eee;
+}
+
+/* ========================================================
+   Individual project styling
+   ========================================================
+*/
+
+.project-description h2.title {
+	color: #006680;
+	font-weight: 700;
+	padding-top: 30px;
+	margin-bottom:5px;
+	border-top: 1px dotted #ccc;
+}
+
+.project-description h3.category {
+	color: #ccc;
+	padding-bottom: 30px;
+}
+
+.project-description .infopanel a img.extra-hidden {
+	display: none;
 }
