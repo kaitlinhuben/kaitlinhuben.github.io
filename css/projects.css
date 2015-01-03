@@ -84,6 +84,9 @@
    Individual project styling
    ========================================================
 */
+.project-description {
+	margin-bottom: 5em;
+}
 
 .project-description h2.title {
 	color: #006680;
