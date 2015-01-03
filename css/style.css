@@ -1,5 +1,10 @@
 /* ========================================================
    General style overrides 
+   Color scheme:
+   super-dark: 00222b
+   dark: 006680
+   medium: 00aad4
+   light: 80e5ff
    ========================================================
 */
 p {
@@ -43,6 +48,16 @@ ul.nav a:hover {
 
 .info-bar {
 	background-color: #00222b;
+}
+
+.logo {
+	-webkit-transition: opacity .3s ease-out;
+	-moz-transition: opacity .3s ease-out;
+	-o-transition: opacity .3s ease-out;
+	transition: opacity .3s ease-out;
+}
+.logo:hover {
+	opacity: 0.75;
 }
 
 /* ========================================================
@@ -89,4 +104,18 @@ img#footer-logo {
 .up-arrow img {
 	height: 30px;
 	margin-bottom: 5px;
+}
+
+/* ========================================================
+   Contact styling
+   ========================================================
+*/
+.contact-links {
+	text-align: center;
+}
+.contact-links div{
+	margin-bottom: 3em;
+}
+.contact-icon {
+	padding-top: 5px;
 }
