@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://kaitlinhuben.github.io" # the base hostname & protocol for your site
 about_link: about.html
 resume_link: resume.html
+resume_pdf: khuben_resume.pdf
 skills_link: skills.html
 projects_link: projects.html
 contact_link: contact.html
