@@ -1,0 +1,41 @@
+<!--[if IE 7 ]>    <html class="desktop ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="desktop ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="desktop ie9" lang="en"> <![endif]--> 
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+      
+	<!-- Meta information -->
+	<meta charset="utf-8" />
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+	<meta name="robots" content="index, follow" /> 
+ 
+	<!--[if lt IE 9]>
+		<script type="text/javascript">/*@cc_on'abbr article aside audio canvas details figcaption figure footer header hgroup mark meter nav output progress section summary subline time video'.replace(/\w+/g,function(n){document.createElement(n)})@*/</script>
+	<![endif]-->
+	<script type="text/javascript">if(Function('/*@cc_on return document.documentMode===10@*/')()){document.documentElement.className+=' ie10';}</script>
+	<script type="text/javascript">(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+	
+	<!-- favicon & idevice homepage thumb -->
+	<link rel="shortcut icon" href="img/favicon.png" />
+	
+	<!-- compressed stylesheet -->
+	<link rel="stylesheet" href="theme/compressed/template.min.css" type="text/css" media="all" />
+	<!-- colors -->
+	<link rel="stylesheet" href="css/color.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- font replacement -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400italic,400,600,700,300' rel='stylesheet' type='text/css'>
+	<!-- end font replacement -->
+
+	<!-- only jQuery and selectivizr loaded here, custom scripts are loaded end of body section -->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="framework/js/selectivizr-min.js"></script>
+	<![endif]--> 
+
+</head>

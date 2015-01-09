@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+	
+    <div class="site-wrapper">
+	
+    {% include header.html %}
+		<div class="page-title">
+			<div class="pe-container">
+				<h1>{{ page.page_title }}</h1>
+			</div>
+		</div>
+		
+		<div class="pe-spacer size40"></div>
+		
+		<div class="pe-container">
+			{{ content }}
+		</div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
