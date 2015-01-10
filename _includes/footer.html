@@ -18,3 +18,14 @@
 		</div>
 	</section>
 </div>
+
+<!-- custom compressed javascript -->
+<script type="text/javascript" src="theme/compressed/template.min.js"></script>
+{% if page.isotope %}
+<!-- isotope for filtering -->
+<script type="text/javascript" src="{{page.isotope}}"></script>
+{% endif %}
+{% if page.custom_js %}
+<!-- custom js -->
+<script type="text/javascript" src="{{page.custom_js}}"></script>
+{% endif %}
