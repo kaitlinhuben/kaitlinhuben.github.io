@@ -3,7 +3,8 @@
   location: New York, NY
   dates: "September 2014 - present"
   description: "Develop software to teach hardware principles to children, under Prof. Martha Kim and Stephen Edwards' FPGAs4Kids project."
-  description2: Check it out on my projects page.
+  description2: !xml | 
+    <a href="projects.html#FPGAs4Kids">Check it out</a> on my projects page.
 
 - title: Software Engineering Intern
   place: Zappos Family of Companies
@@ -18,7 +19,7 @@
   dates: "September 2013 - May 2014"
   description: "Research project with Prof. Jose Blanchet (funded by an NSF REU grant). Designed web application to model statistically accurate algorithm for Brownian motion."
   description2: !xml | 
-    <a href="projects.html#Brownian">Check it out</a>.
+    <a href="projects.html#Brownian">Check it out</a> on my projects page.
 
 - title: Software Entrepreneurship Intern
   place: The Veloz Group
