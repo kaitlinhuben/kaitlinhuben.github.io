@@ -9,7 +9,7 @@
   link: Sveltest
   categories: class
   description: |
-    <p>I am in a group of five that is developing a new language and compiler for our <a href="http://www1.cs.columbia.edu/~aho/cs4115/">Programming Languages & Translators</a> course (COMS 4115). We're working on SvelTest, a language to help make testing and debugging programs easier. It's very much still a work in progress, but you can check out our <a href="https://github.com/svelTest/svelTest">repo</a>.</p>
+    <p>I was in a group of five that is developed a new language and compiler for our <a href="http://www1.cs.columbia.edu/~aho/cs4115/">Programming Languages & Translators</a> course (COMS 4115). We worked on SvelTest, a language to help make testing and debugging programs easier. You can check out our <a href="https://github.com/svelTest/svelTest">repo</a>, <a href="http://sveltest.github.io/manual/">language reference manual</a>, and <a href="http://sveltest.github.io/tutorial/">tutorial</a>.</p>
 
 - name: Orion
   link: Orion
