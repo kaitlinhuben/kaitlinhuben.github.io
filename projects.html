@@ -9,7 +9,7 @@ custom_js: js/isotope-projects.js
 <div class="row-fluid">
         
 	<div class="span12">
-	<p>You can use the filters below to check out my projects.</p>
+	<p>You can use the filters below to check out my projects. They're roughly in reverse chronological order, with the most recent projects first.</p>
 	<div id="categories-filter-div">
 		<ul class="categories-filter" id="projects-filter">
 			<li><a href="" class="current transition" data-filter="*">All</a></li>
@@ -21,42 +21,13 @@ custom_js: js/isotope-projects.js
 		</ul>
 		<div class="span12">&nbsp;</div>
 		<ul id="projects-list">
-
-			<li class="websites ecommerce">
-				<a href="#Veloz"><div class="single-project-li">Veloz</div></a>
+		
+			{% for project in site.data.projects %}
+			<li class="{{project.categories}}">
+				<a href="#{{project.link}}"><div class="single-project-li">{{project.name}}</div></a>
 			</li>
-
-			<li class="websites hacks">
-				<a href="#Geocash"><div class="single-project-li">GeoCash</div></a>
-			</li>
-
-			<li class="websites research">
-				<a href="#Brownian"><div class="single-project-li">Brownian Motion</div></a>
-			</li>
-
-			<li class="websites">
-				<a href="#Altz"><div class="single-project-li">alt-z</div></a>
-			</li>
-
-			<li class="class">
-				<a href="#Gesture"><div class="single-project-li">Gesture Video</div></a>
-			</li>
-
-			<li class="class">
-				<a href="#Fourpeople"><div class="single-project-li">FourPeople</div></a>
-			</li>
-
-			<li class="websites class">
-				<a href="#Orion"><div class="single-project-li">Orion</div></a>
-			</li>
-
-			<li class="class">
-				<a href="#Sveltest"><div class="single-project-li">SvelTest</div></a>
-			</li>
+			{% endfor %}
 			
-			<li class="research">
-				<a href="#FPGAs4Kids"><div class="single-project-li">FPGAs4Kids</div></a>
-			</li>
 		</ul>
 	</div><!-- /#categories-filter-div -->
 
@@ -64,93 +35,12 @@ custom_js: js/isotope-projects.js
 	
 </div><!-- /.row-fluid -->
 
+{% for project in site.data.projects %}
 <div class="row-fluid project-description">
-	<div class="span12" id="Veloz">
-		<h2 class="title">Veloz</h2>
-		<h3 class="category">Websites &amp; E-commerce</h3>
-		<p>As an intern with The Veloz Group during the summer of 2013, I worked on creating and maintaining a variety of websites for them.</p>
-		<ul>
-			<li><u>The Veloz Group</u>: My first project with Veloz involved some small changes to their <a href="http://www.thevelozgroup.com">home site</a> to familiarize me with their codebase. I learned how to use CodeIgniter, which is a PHP MVC (model-view-controller) framework. </li>
-			<li><u>Veloz Recruiting</u>: My next project involved working closely with the business interns to revamp the existing Veloz Recruiting site. Goals of the project included increasing usability, efficiently collecting information from potential employers, advertising Veloz interns, and making sure the site displayed well on mobile devices. The existing site met very few of these requirements, so we ended up gutting the old site and rebuilding with a new theme.</li>
-			<li><u>My Touch Up Paint</u>: The third site I worked on was my first exposure to OpenCart, a PHP MVC framework similar to CodeIgniter but optimized for e-commerce. I worked with one other software intern on sorting out some of the bugs, like a misplaced banner that prevented users from creating an account or logging in, and updating Google Analytics to more effectively track what users were interested in ordering.</li>
-			<li><u>Fashionable Furnishings</u>: My last project was to work with two other software interns to create a new OpenCart site. A team of business interns was creating a new furniture line, which we dubbed "Fashionable Furnishings" as a working name. They picked an OpenCart theme that our team heavily modified to fit the designers' plans. During this project I learned how to use <a href="http://www.inkscape.org/">Inkscape</a>, an open-source design tool like Illustrator; I designed the working logo for Fashionable Furnishings.</li>
-		</ul>
-		<p>Screenshots coming soon.</p>
+	<div class="span12" id="{{project.link}}">
+		<h2 class="title">{{project.name}}</h2>
+		<h3 class="category">{{project.categories}}</h3>
+		{{project.description}}
 	</div>
 </div><!-- /.row-fluid.project-description-->
-
-<div class="row-fluid project-description">
-	<div class="span12" id="Geocash">
-		<h2 class="title">GeoCash</h2>
-		<h3 class="category">Websites &amp; Hacks</h3>
-		<p>Our team at <a href="http://2013f.pennapps.com/">PennApps Fall 2013</a> put together an app called GeoCash; it's essentially the love-child of Venmo and Foursquare. You can check it out <a href="http://www.geoca.sh">here</a>, or look at our <a href="http://pennapps.challengepost.com/submissions/17094-geocash">PennApps submission</a> or <a href="https://github.com/adamreis/GeoCash">source code</a>.</p>
-		<p>We attracted some <a href="http://2013f.pennapps.com/prizes.html">sponsor attention</a>, including
-		<ul>
-			<li><a href="http://sendgrid.com/">SendGrid</a>'s "Best Use of SendGrid"</li>
-			<li><a href="http://www.addthis.com/">AddThis</a>'s "Most Viral"</li>
-		</ul>
-		<p>PennApps accidentally announced us as having also won TokBox's "Best Use of TokBox API." (Spoiler: we didn't use TokBox's API!) TokBox felt bad for the misunderstanding, though, so they sent us some sweet shirts :)</p>
-		<p>The "Most Viral" award came with 50 MLH points, which helped propel Columbia to <a href="http://mlh.io/blog/umd-wins-the-fall-2013-hackathon-season-10-15-2013/">fifth place overall</a> in the Fall 2013 Major League Hacking season.</p>
-		<p>Screenshots coming soon.</p>
-	</div>
-</div><!-- /.row-fluid.project-description-->
-
-<div class="row-fluid project-description">
-	<div class="span12" id="Brownian">
-		<h2 class="title">Brownian Motion</h2>
-		<h3 class="category">Websites &amp; Research</h3>
-		<p>Through Fall 2013, I worked with Professor Jose Blanchet under an NSF REU grant. He had worked with a few other students to develop an algorithm that statistically accurately models <a href="http://en.wikipedia.org/wiki/Brownian_motion">Brownian motion</a>. I helped develop an application to visualize that algorithm. First I worked with one of the graduate students to understand the MATLAB code and simulations, and then I dove into creating what ended up being a purely JavaScript-based app.</p>
-		<p>He presented our work under the title "Capturing Infinite Randomness with Computer Simulations," and I will be presenting at a few symposiums at Columbia during Spring 2014.</p>
-		<p>You can check out the application <a href="http://kaitlinhuben.github.io/brownian-motion/">here</a> and see the source code <a href="http://www.github.com/kaitlinhuben/brownian-motion">here</a>.</p>
-	</div>
-</div><!-- /.row-fluid.project-description -->
-
-<div class="row-fluid project-description">
-	<div class="span12" id="Altz">
-		<h2 class="title">alt-z</h2>
-		<h3 class="category">Websites</h3>
-		<p>When I applied to work at <a href="http://www.zappos.com/">Zappos</a>, one of the challenges for the front-end developer position was to design a website about llamas (the unofficial mascot). I created a silly site that you can check out <a href="http://kaitlinhuben.github.io/alt-z/">here</a> with the source code <a href="http://www.github.com/kaitlinhuben/alt-z">here</a>.</p>
-	</div>
-</div><!-- /.row-fluid.project-description -->
-
-<div class="row-fluid project-description">
-	<div class="span12" id="Gesture">
-		<h2 class="title">Gesture Video</h2>
-		<h3 class="category">Class Projects</h3>
-		<p>In <a href="http://graphics.cs.columbia.edu/courses/csw4170/syllabus-13f.htm">User Interface Design</a> (COMS 4170), one of our <a href="http://graphics.cs.columbia.edu/courses/csw4170/assn3-13f.htm">assignments</a> was to develop a gesture-based video player using the <a href="http://www.w3.org/2010/05/video/mediaevents.html">HTML5 video API</a> and the <a href="http://depts.washington.edu/aimgroup/proj/dollar/">$1 unistroke recognizer</a>. You can check it out <a href="http://kaitlinhuben.github.io/gesture-video/">here</a> with the source code <a href="http://www.github.com/kaitlinhuben/gesture-video">here</a>.</p>
-	</div>
-</div><!-- /.row-fluid.project-description -->
-
-<div class="row-fluid project-description">
-	<div class="span12" id="Fourpeople">
-		<h2 class="title">FourPeople</h2>
-		<h3 class="category">Class Projects</h3>
-		<p>In <a href="http://graphics.cs.columbia.edu/courses/csw4170/syllabus-13f.htm">User Interface Design</a> (COMS 4170), our <a href="http://graphics.cs.columbia.edu/courses/csw4170/proj-13f.htm">final group project</a> was to create either a location-based or schedule-based itinerary application utilizing Foursquare. Our group developed Fourpeople, a schedule-based itinerary manager that allows you to visualize your trip. You can check out the final product <a href="http://kaitlinhuben.github.io/fourpeople/">here</a> with the source code <a href="http://www.github.com/kaitlinhuben/fourpeople">here</a>.</p>
-	</div>
-</div><!-- /.row-fluid.project-description -->
-
-<div class="row-fluid project-description">
-	<div class="span12" id="Orion">
-		<h2 class="title">Orion</h2>
-		<h3 class="category">Websites &amp; Class Projects</h3>
-		<p>As part of the <a href="https://www.facebook.com/notes/facebook-engineering/facebook-open-academy-bringing-open-source-to-cs-curricula/10151806121378920">Open Academy</a> class at Columbia, I have been working with <a href="https://orionhub.org/">Orion</a>, a cloud-based IDE that's great for writing and testing JavaScript. My team has been working on the Node server for Orion, which is intended for "embedded developers," to quote our mentor. We've been working on a variety of bugs and enhancements, including adding a TTY shell and creating a global installation option for the npm module. You can learn more on our <a href="http://orionprojectcu.wordpress.com/">blog</a>, or check out our work on <a href="https://github.com/kaitlinhuben/orion.client">my fork</a> or <a href="https://github.com/jrbalsano/orion.client">my teammate's fork</a>.</p> 
-		<p>One of my projects was to create a plugin that clears local storage, so developers writing for Orion Node can see their changes more easily. It's not a default plugin, which means users can navigate to the plugin to install it. That's hosted <a href="http://kaitlinhuben.github.io/orion-clearLocalStoragePlugin/clearLocalStoragePlugin.html">here.</a> It doesn't look like much, as the meat of the plugin takes place through JavaScript behind the scenes.</p>
-	</div>
-</div><!-- /.row-fluid.project-description -->
-
-<div class="row-fluid project-description">
-	<div class="span12" id="Sveltest">
-		<h2 class="title">SvelTest</h2>
-		<h3 class="category">Class Projects</h3>
-		<p>I am in a group of five that is developing a new language and compiler for our <a href="http://www1.cs.columbia.edu/~aho/cs4115/">Programming Languages & Translators</a> course (COMS 4115). We're working on SvelTest, a language to help make testing and debugging programs easier. It's very much still a work in progress, but you can check out our <a href="https://github.com/svelTest/svelTest">repo</a>.</p>
-	</div>
-</div><!-- /.row-fluid.project-description -->
-
-<div class="row-fluid project-description">
-	<div class="span12" id="FPGAs4Kids">
-		<h2 class="title">FPGAs4Kids</h2>
-		<h3 class="category">Research</h3>
-		<p>I am currently working with Professors Martha Kim and Stephen Edwards to develop software to teach hardware principles to children. It's been an adventure to learn <a href="http://www.elm-lang.org">Elm</a>, a functional reactive programming language.</p>
-		<p>It's still very much a work in progress, but you can check out the <a href="http://www.github.com/kaitlinhuben/logic-game">repo</a>.</p>
-	</div>
-</div><!-- /.row-fluid.project-description -->
+{% endfor %}
