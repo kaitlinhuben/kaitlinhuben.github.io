@@ -127,6 +127,7 @@ img#footer-logo {
 .skill {
 	font-size: 150%;
 	padding: 10px 0px;
+	width: 200px;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
 }
@@ -141,10 +142,9 @@ img#footer-logo {
 	border-bottom: 1px dotted #ccc;
 }
 
-img.skills-rating {
-	height: 20px;
-	display: block;
-	margin-right: 2em;
+.skill-ranking {
+	font-size: 125%;
+	color: #006680;
 }
 
 /* ========================================================

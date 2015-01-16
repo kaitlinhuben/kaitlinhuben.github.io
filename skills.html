@@ -28,7 +28,14 @@ custom_js: js/isotope-skills.js
 
 	{% for skill in site.data.skills %}
 	<div class="skill {{skill.categories}}">
-		<p><span class="skill-name">{{skill.name}}<span> <img src="img/skills/stars-{{skill.level}}.png" class="skills-rating"/></p>
+		<p><span class="skill-name">{{skill.name}}<span></p>
+		<p class="skill-ranking">
+		{% if skill.level1 or skill.level2 or skill.level3 or skill.level4 or skill.level5%}&#9733;{% else %}&#9734;{% endif %}
+		{% if skill.level2 or skill.level3 or skill.level4 or skill.level5%}                &#9733;{% else %}&#9734;{% endif %}
+		{% if skill.level3 or skill.level4 or skill.level5%}                                &#9733;{% else %}&#9734;{% endif %}
+		{% if skill.level4 or skill.level5%}                                                &#9733;{% else %}&#9734;{% endif %}
+		{% if skill.level5%}                                                                &#9733;{% else %}&#9734;{% endif %}
+		</p>
 	</div>
 	{% endfor %}
 	

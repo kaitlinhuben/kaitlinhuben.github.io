@@ -1,71 +1,71 @@
 - name: Git
   categories: frameworks
-  level: "5"
+  level5: true
   
 - name: Windows
   categories: os
-  level: "5"
+  level5: true
 
 - name: UNIX
   categories: os
-  level: "5"
+  level5: true
   
 - name: "HTML/CSS"
   categories: web
-  level: "5"
+  level5: true
 
 - name: "JS/jQuery"
   categories: web languages
-  level: "4"
+  level4: true
 
 - name: Java
   categories: languages
-  level: "5"
+  level5: true
 
 - name: "C/C++"
   categories: languages
-  level: "4"
+  level4: true
 
 - name: Python
   categories: languages
-  level: "4"
+  level4: true
 
 - name: PHP
   categories: languages
-  level: "3"
+  level3: true
 
 - name: Elm (functional)
   categories: languages
-  level: "3"
+  level3: true
 
 - name: MATLAB
   categories: languages
-  level: "3"
+  level3: true
 
 - name: MySQL
   categories: languages
-  level: "2"
+  level2: true
 
 - name: CodeIgniter
   categories: web frameworks
-  level: "3"
+  level3: true
 
 - name: OpenCart
   categories: web frameworks
-  level: "3"
+  level3: true
 
 - name: Inkscape
   categories: web
-  level: "4"
+  level4: true
 
 - name: Handlebars
   categories: web frameworks
-  level: "3"
+  level3: true
 
 - name: Sass
   categories: web frameworks
-  level: "3"
+  level3: true
 
 - name: Jekyll
   categories: web frameworks
-  level: "3"
+  level3: true
