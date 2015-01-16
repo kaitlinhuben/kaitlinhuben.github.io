@@ -42,6 +42,10 @@ ul.nav a:hover {
 	color: #00aad4 !important;
 }
 
+span.subtitle.active {
+	border-top: 1px dotted #006680;
+}
+
 .pe-spacer.size40 {
 	height:40px;
 }

@@ -38,11 +38,11 @@
 									
 					<!--main nav-->
 					<ul class="nav" id="navigation">
-						<li class="menu-item"><a href="{{site.about_link}}"></b>ABOUT<span class="subtitle"></span></a></li>
-						<li class="menu-item"><a href="{{site.resume_link}}">RESUME</a></li>
-						<li class="menu-item"><a href="{{site.skills_link}}"></b>SKILLS<span class="subtitle"></span></a></li>
-						<li class="menu-item"><a href="{{site.projects_link}}">PROJECTS</a></li>
-						<li class="menu-item"><a href="{{site.contact_link}}">CONTACT<span class="subtitle"></span></a></li>
+						<li class="menu-item"><a href="{{site.about_link}}"></b>ABOUT<span class="subtitle {% if page.about_active %}active{% endif %}"></span></a></li>
+						<li class="menu-item"><a href="{{site.resume_link}}">RESUME<span class="subtitle {% if page.resume_active %}active{% endif %}"></span></a></li>
+						<li class="menu-item"><a href="{{site.skills_link}}"></b>SKILLS<span class="subtitle {% if page.skills_active %}active{% endif %}"></span></a></li>
+						<li class="menu-item"><a href="{{site.projects_link}}">PROJECTS<span class="subtitle {% if page.projects_active %}active{% endif %}"></span></a></li>
+						<li class="menu-item"><a href="{{site.contact_link}}">CONTACT<span class="subtitle {% if page.contact_active %}active{% endif %}"></span></a></li>
 					</ul>
 				</div>
 

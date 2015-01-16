@@ -1,0 +1,24 @@
+- name: Email
+  icon: icon-mail
+  link: "mailto:kjh2141@columbia.edu"
+  text: "mailto:kjh2141@columbia.edu"
+
+- name: GitHub
+  icon: icon-github
+  link: http://www.github.com/kaitlinhuben
+  text: kaitlinhuben
+
+- name: LinkedIn
+  icon: icon-linkedin
+  link: http://www.linkedin.com/in/kaitlinhuben
+  text: Kaitlin Huben
+
+- name: Facebook
+  icon: icon-facebook
+  link: http://www.facebook.com/kaitlin.huben
+  text: Kaitlin Huben
+
+- name: Twitter
+  icon: icon-twitter
+  link: http://www.twitter.com/kaitlinhuben
+  text: "@kaitlinhuben"
