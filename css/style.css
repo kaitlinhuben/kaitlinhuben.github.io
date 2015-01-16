@@ -1,0 +1,191 @@
+/* ========================================================
+   General style overrides 
+   Color scheme:
+   super-dark: 00222b
+   dark: 006680
+   medium: 00aad4
+   light: 80e5ff
+   ========================================================
+*/
+p {
+	font-size: 16px;
+}
+
+p.intro {
+	font-size: 24px;
+	color: #006680;
+}
+
+a:hover {
+	color: #006680 !important;
+}
+
+ul {
+	list-style: circle;
+	font-size: 16px;
+	margin: -1em 0em 1.5em 1em;
+}
+
+ul li {
+	padding-bottom: 0.5em;
+}
+
+div.sm-icon-wrap a:hover {
+	color: #00aad4 !important;
+}
+
+ul.nav {
+	margin: 0;
+}
+
+ul.nav a:hover {
+	color: #00aad4 !important;
+}
+
+span.subtitle.active {
+	border-top: 1px dotted #006680;
+}
+
+.pe-spacer.size40 {
+	height:40px;
+}
+
+.info-bar {
+	background-color: #00222b;
+}
+
+.logo {
+	-webkit-transition: opacity .3s ease-out;
+	-moz-transition: opacity .3s ease-out;
+	-o-transition: opacity .3s ease-out;
+	transition: opacity .3s ease-out;
+}
+.logo:hover {
+	opacity: 0.75;
+}
+
+/* ========================================================
+   Footer styling
+   ========================================================
+*/
+.footer {
+	border-top-color: white;
+	padding-top: 10px;
+}
+
+img#footer-logo {
+	height: 1.5em;
+}
+
+/* ========================================================
+   Resume styling
+   ========================================================
+*/
+.resume-links {
+	text-align: center;
+}
+.resume-links a.read-more {
+	font-size: 125%;
+	padding: 10px 0px;
+}
+.resume-links a.read-more:hover {
+	color: #fff !important;
+}
+
+.resume-title, .resume-place {
+	color: #006680;
+}
+.resume-place a {
+	color: #00aad4;
+}
+.resume-dates {
+	font-style: italic;
+}
+
+.up-arrow:hover,.up-arrow img:hover {
+	opacity: 0.75;
+}
+.up-arrow img {
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+/* ========================================================
+   Contact styling
+   ========================================================
+*/
+.contact-links {
+	text-align: center;
+}
+.contact-links div{
+	margin-bottom: 3em;
+}
+.contact-icon {
+	padding-top: 5px;
+}
+
+/* ========================================================
+   skills styling
+   ========================================================
+*/
+.skill {
+	font-size: 150%;
+	padding: 10px 0px;
+	width: 200px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.skill p {
+	margin: 0px;
+}
+
+.skill:hover {
+	opacity: 0.75;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+
+.skill-ranking {
+	font-size: 125%;
+	color: #006680;
+}
+
+/* ========================================================
+   Filter categories styling
+   ========================================================
+*/
+.categories-filter {
+	overflow:hidden;
+	list-style-type: none;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+	margin: 0;
+}
+.categories-filter li {
+	list-style:none;
+    background-image:none;
+    background-repeat:none;
+    background-position:0; 
+	padding-bottom: 0px;
+}
+
+.categories-filter li a {
+    padding: 5px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+	background-color: #ccc;
+    text-decoration: none;
+    margin: 10px 20px 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: left;
+}
+.categories-filter li a:hover, .categories-filter li a.current { 
+	color: #fff !important;
+	background-color: #00aad4;
+	border-bottom: none;
+}
