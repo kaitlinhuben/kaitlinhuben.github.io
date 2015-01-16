@@ -1,7 +1,7 @@
 - name: Email
   icon: icon-mail
   link: "mailto:kjh2141@columbia.edu"
-  text: "mailto:kjh2141@columbia.edu"
+  text: "kjh2141@columbia.edu"
 
 - name: GitHub
   icon: icon-github
