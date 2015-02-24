@@ -3,7 +3,7 @@ safe: true
 title: Kaitlin Huben
 email: kjh2141@columbia.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Description TODO
+  Kaitlin Huben is a Computer Science major at Columbia University, graduating in May 2015.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://kaitlinhuben.github.io" # the base hostname & protocol for your site
 about_link: about.html
