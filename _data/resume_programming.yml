@@ -1,8 +1,8 @@
 - title: Research Assistant
   place: Columbia University Computer Science Department
   location: New York, NY
-  dates: "September 2014 - present"
-  description: "Develop software to teach hardware principles to children, under Prof. Martha Kim and Stephen Edwards' FPGAs4Kids project."
+  dates: "September 2014 - May 2015"
+  description: "Developed software to teach hardware principles to children, under Prof. Martha Kim and Stephen Edwards' FPGAs4Kids project."
   description2: !xml | 
     <a href="projects.html#FPGAs4Kids">Check it out</a> on my projects page.
 
