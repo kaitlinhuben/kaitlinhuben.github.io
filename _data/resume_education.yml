@@ -2,5 +2,8 @@
   place: Fu Foundation School of Engineering and Applied Science
   location: New York, NY
   dates: "September 2011 - May 2015, GPA: 4.13/4.00"
-  description: "Graduated <em>summa cum laude</em> with a Bachelor of Science in Computer Science, Applications Track. Received the Computer Science Scholarship Award for Excellence and Computer Science Department Certificate of Distinction for Academic Excellence."
+  description:  !xml | 
+    Graduated <em><b>summa cum laude</b></em> with a Bachelor of Science in Computer Science, Applications Track.<br><br>
+    Received the Computer Science Scholarship Award for Excellence and the Computer Science Department Certificate of Distinction for Academic Excellence.<br><br>
+    Participated in the <a href="http://engineering.columbia.edu/kaitlin-huben">Egleston Scholar Program</a>, chosen from the top one percent of applicants to the engineering school.
   external_link: http://www.engineering.columbia.edu/
